@@ -13,6 +13,11 @@ export interface FadeInProps {
     children?: ReactNode;
     className?: string;
     /**
+     * No default. Adds a `className` prop to each child div, allowing 
+     * you to style the direct children of the `FadeIn` component.
+     */
+    childClassName?: string;
+    /**
      * Default: 50. Delay between each child's animation in milliseconds.
      */
     delay?: number;
